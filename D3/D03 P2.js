@@ -21,12 +21,10 @@ let rating = master ;
      else {
          counter = 0
      }        
-     if (sign==true) {
      for (let k=0; k<rating.length;k++) {
          if ((sign==true && rating[k][i] == counter) || (sign==false && rating[k][i] != counter)) {
            temp.push(rating[k]) 
          }
-     }
      }
      rating = temp
      if (rating.length == 1) {
